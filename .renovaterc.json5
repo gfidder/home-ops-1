@@ -15,8 +15,11 @@
     ":dependencyDashboard",
     ":semanticCommits",
   ],
-  dependencyDashboard: true,
   dependencyDashboardTitle: "Renovate Dashboard 🤖",
+  suppressNotifications: [
+    "prEditedNotification",
+    "prIgnoreNotification",
+  ],
   schedule: ["every weekend"],
   ignorePaths: [
     "**/*.sops.*",
