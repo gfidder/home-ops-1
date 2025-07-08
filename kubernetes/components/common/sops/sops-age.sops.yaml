@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: sops-age
+stringData:
+  age.agekey: ENC[AES256_GCM,data:MjElHRIEvjU2Ln5btY1lVh8Gzekcpd9DS/GL73bYlXtcxueXtXy/tMzY/ZEEke4kTGOE3tKRlMYWqepzFLjGpR3di94PAa5YuNI=,iv:Bn93iiWv9q27wiyP1BWeuc3pgWhcUEETIO8xzve0l84=,tag:S/KaVohJROTkp+phFKLv4A==,type:str]
+sops:
+  age:
+    - recipient: age1qqrqa5eqkp6rr890jwc6htjdp96gdgph09rd5lmac5yklys89scssjm4xu
+      enc: |
+        -----BEGIN AGE ENCRYPTED FILE-----
+        YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBLYWFyMEVHWWJBN3pJQVA3
+        NGJIUkRwMTd5ODByRWp5R0Y3bjFsNFE3ZGk0CnAweTdZaSt5dDB0cDU3UVVEd0cx
+        TmhoTzl3cXpIRklVcmFKMWdvWjN3UU0KLS0tIGZrZHdmZ1VDZDhoWjBtRVI1Ylll
+        ckJxY3haTGpJVHlJNG1sUllyc1FaeW8KiFeZn5WunSm8PAH5a4CC06g8JRP1NfN1
+        1gwMfHQuEIzT0ivBU5ZOPQkH8c128I4FyKqwPSdpiAZW7GlPdA/P8Q==
+        -----END AGE ENCRYPTED FILE-----
+  lastmodified: "2025-07-08T19:07:31Z"
+  mac: ENC[AES256_GCM,data:8DABX12Gl149d+9ol7InQFHjSzHm3bKHseldIQPBTAvXeG2Fro9YFs8DEkFgBZHdbybCtl2WHweAOCMUAgFY18JiXuv+mt9Qw9CaEvq6Vv2UWMd3fVdkvpxy0vGo0qfu3Yw/L97GbBsOZ80PRN3BsLA2wl8SS4RCZVZt3nLY2zA=,iv:VqQ8e2Vt94IB+R7gj2B3Ax2BFwq3tNvVLlvgHbiHVJc=,tag:bStv18Qv7Kqa3shik4R8YQ==,type:str]
+  encrypted_regex: ^(data|stringData)$
+  mac_only_encrypted: true
+  version: 3.10.2
