@@ -25,7 +25,7 @@ jobs:
           app-id: "${{ secrets.BOT_APP_ID }}"
           private-key: "${{ secrets.BOT_APP_PRIVATE_KEY }}"
       - name: Labeler
-        uses: actions/labeler@v5
+        uses: actions/labeler@f27b608878404679385c85cfa523b85ccb86e213 # v6
         with:
           configuration-path: .github/labeler.yaml
           repo-token: "${{ steps.app-token.outputs.token }}"
